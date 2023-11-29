@@ -1,0 +1,81 @@
+#service{
+  background-color: #F6F6F6;
+  background-image: url('../img/Home/Wave\ Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.service_card{
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.service_card:hover{
+  scale:1.05;
+}
+
+#reach{
+  background-image: url('../img/Home/form\ car\ image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form_section{
+  background: var(--white);
+  border-radius: 6px;
+  padding: 3rem 0rem;
+}
+
+.form_section h4{
+  font-size: 2rem;
+}
+
+.form-group{
+  margin:1rem;
+
+}
+.send-button{
+  width: 50%;
+  padding:0.5rem !important;
+}
+#partner{
+  background: #F6F6F6;
+}
+
+#coming{
+  background-image: url('../img/Home/Group\ 56.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#coming h4{
+  font-size:2rem;
+  font-weight: var(--regular);
+  line-height: 3rem;
+
+}
+
+#coming h1{
+  font-size:4rem;
+  line-height: 4rem;
+  font-weight: var(--bold);
+}
+
+/* Media Query Starts */
+@media (max-width:680px){
+  
+  .partner-offerings div{
+    width:50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Media Query Ends */

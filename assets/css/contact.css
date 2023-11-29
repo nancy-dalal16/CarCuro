@@ -1,0 +1,76 @@
+.banner-content-contact {
+  position: relative;
+  top: 30%;
+}
+
+#hero {
+  background: url('../img/Contact/Group\ 49.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+.card{
+  padding:1.5rem;
+  border-radius: 6px;
+  background: var(--white);
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.10);
+  /* flex: 1 0 30%; */
+  align-items: center;
+  margin: 1%;
+  width: 30%;
+}
+
+.card:hover{
+  scale: 1.05;
+}
+
+.card h6{
+  font-size: 1.12rem;
+  line-height: 2rem;
+  font-weight: var(--bold);
+  color:var(--darkblue);
+}
+
+.card-img{
+  width: auto;
+    margin-right: 30px;
+}
+
+.form-contain{
+  border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.10);
+}
+
+.form_section{
+  padding:3rem 12rem;
+}
+
+#map{
+  background-color: #f6f6f6;
+}
+
+
+/* Media Query Starts */
+
+@media (max-width:998px){
+
+  .banner-content-contact{
+    top:25%;
+  }
+  .card{
+    width:45%;
+  }
+  .form_section{
+    padding:2rem;
+  }
+}
+
+@media (max-width:680px){
+  .card{
+width:100%;
+  }
+}
+/* Media Query Ends */

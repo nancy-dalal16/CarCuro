@@ -1,0 +1,226 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+@font-face {
+    font-family: A4 Speed;
+    src: url('../fonts/a4_speed/A4SPEED-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Filson Pro;
+    src: url('../fonts/filson-pro-cufonfonts/FilsonProThin.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Filson Pro;
+    src: url('../fonts/filson-pro-cufonfonts/FilsonProRegular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Filson Pro;
+    src: url('../fonts/filson-pro-cufonfonts/FilsonProMedium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Filson Pro;
+    src: url('../fonts/filson-pro-cufonfonts/FilsonProHeavy.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Filson Pro;
+    src: url('../fonts/filson-pro-cufonfonts/FilsonProBlack.otf') format('opentype');
+    font-weight: 700;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Filson Pro';
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+:root {
+    --primary: #526FB4; 
+    --darkblue: #191919;
+    --blue: #338EC9;
+    --yellow: #F4B71C;
+    --black: #232323;
+    --lightwhite: #F6F6F6;
+    --white: #fff;
+    --extrabold: 800;
+    --bold: 700;
+    --medium: 600;
+    --semibold: 500;
+    --regular: 400;
+    --light: 300;
+}
+
+p {
+    /* margin-bottom: 8px; */
+    line-height: 1.7rem;
+    color: rgba(25, 25, 25, 0.60);;
+    font-size: 1rem;
+    font-weight: var(--regular);
+}
+
+.inverse {
+    color: var(--white)
+}
+
+.page-section {
+    padding: 5rem 0px;
+}
+
+
+.btn-primary {
+    font-size: 1rem;
+    /* padding: 0.62rem 2.25rem; */
+    padding: 0.8rem 2rem;
+    border-radius: 1.8rem;
+    background: var(--primary);
+    color: var(--white);
+    transition: all 0.3s;
+    font-weight: var(--semibold);
+    display: inline-block;
+}
+.btn-primary:hover {
+    background: transparent;
+    border: 1px solid var(--blue);
+    color:var(--blue)
+}
+
+/* .btn-primary:focus {
+    outline: unset;
+    box-shadow: unset;
+    background: initial;
+    background: var(--primary);
+    color: var(--white);
+} */
+
+
+.btn-secondary {
+    font-size: 1rem;
+    padding: 0.8rem 2rem !important;
+    border-radius: 1.8rem;
+    border: 1px solid var(--blue);
+    background: transparent;
+    color: var(--blue);
+    transition: all 0.3s;
+    font-weight: var(--semibold);
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background: var(--blue);
+    color:var(--white)
+}
+
+.btn-white {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 1.8rem;
+    background: var(--white);
+    color: var(--darkblue);
+    transition: all 0.3s;
+    font-weight: var(--semibold);
+    display: inline-block;
+}
+
+.btn-white:hover {
+    background: transparent;
+    color:var(--white);
+    border: 1px solid #fff;
+}
+
+.btn-inverse {
+    font-size: 1rem;
+    padding: 0.8rem 2rem !important;
+    border-radius: 1.8rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: var(--white);
+    transition: all 0.3s;
+    font-weight: var(--semibold);
+    display: inline-block;
+}
+.btn-inverse:hover {
+    background: var(--white);
+    color:var(--darkblue);
+}
+
+
+
+h4 {
+    color: var(--darkblue);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: var(--bold);
+}
+
+h5{
+    color:var(--darkblue);
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    font-weight: var(--bold);
+}
+
+#hero {
+    background: url('../img/Rectangle\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+}
+
+
+.section-title {
+    font-size: 3.75rem;
+    font-weight: var(--medium);
+    line-height: 4rem;
+}
+
+
+
+/* Media Query Starts */
+
+@media (max-width:998px){
+html{
+    font-size: 55%;
+}
+}
+
+@media (max-width:768px){
+html{
+    font-size: 90%;
+}
+}
+   
+  
+  /* Media Query Ends */
