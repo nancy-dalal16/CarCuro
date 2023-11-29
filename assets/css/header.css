@@ -92,7 +92,9 @@ header {
       /* display: none; */
       width: 96%;
       /* height: 40vh; */
-      background: #0B0D31;
+      /* background: #0B0D31; */
+      backdrop-filter: blur(200px);
+      background: transparent;
       position: absolute;
       top: 6rem;
       left: 0;
