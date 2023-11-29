@@ -106,7 +106,7 @@ header {
       pointer-events: none;
       z-index: 999;
       margin: 5px;
-      height: 100vh;
+      height: 85vh;
   }
 
   .navigation li {
