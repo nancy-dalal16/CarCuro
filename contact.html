@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarCuro</title>
-  <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico"> -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
 
   <!-- HTML Meta Tags -->
   <meta name="description"
@@ -81,17 +81,17 @@
           <div class="navigationHolder">
             <ul class="navigation list-unstyled">
               <li>
-                <a href="index.html" class="active">Home</a>
+                <a href="./" class="active">Home</a>
+              </li>
+              <li>
+                <a href="./#about">About CarCuro</a>
               </li>
               <!-- <li>
-                <a href="index.html/#about">About CarCuro</a>
-              </li>
-              <li>
                 <a href="#soon">Products</a>
-              </li>
+              </li> -->
               <li>
-                <a href="index.html/#service">Services</a>
-              </li>-->
+                <a href="./#service">Services</a>
+              </li>
               <li>
                 <a href="contact.html">Contact Us</a>
               </li>
@@ -246,7 +246,7 @@
         <div class="container">
           <h4 class="text-center">Reach Out To Us</h4>
 
-          <form action="">
+          <form name="contact" method="post">
             <div class="form-group">
               <div class="row gy-3">
                 <div class="col-md-6">
@@ -271,10 +271,10 @@
               </select>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+              <textarea class="form-control" rows="3" name="comment" placeholder="Comment"></textarea>
             </div>
             <div class="d-flex justify-content-center mt-4">
-              <button type="submit" class="btn-primary send-button">Send Request</button>
+              <button type="submit" name="submit" class="btn-primary send-button">Send Request</button>
             </div>
           </form>
         </div>
@@ -308,6 +308,41 @@
   <script src="assets/plugins/scroll_animation/scroll-animation.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/header.js"></script>
+
+  <script>
+    var form = document.forms["contact"];
+    form.addEventListener('submit', contact_submit, false);
+
+    function contact_submit(e) {
+      // Stop Form From Submitting
+      e.preventDefault();
+
+      // Set Initial Variables
+      var target = e.target || e.srcElement;
+      var to = 'nancydalal16@gmail.com';
+      var uri = 'mailto:' + to;
+      var body = '';
+
+      // Set Form Values to Variables
+      var name = target.elements['name'].value;
+      var email = target.elements['email'].value;
+      var comment = target.elements['comment'].value;
+      var subject = 'Contact Inquiry';
+
+      // Build Body / Message with all Input Fields
+      body += message + "\r\n\r\n";
+      body += "Name: " + name + "\r\n";
+      body += "Email: " + email + "\r\n";
+      body += "Comment: " + comment + "\r\n";
+
+      // Build final Mailto URI
+      uri += '?subject=' + encodeURIComponent(subject);
+      uri += '&body=' + encodeURIComponent(body);
+
+      // Open Mailto in New Window / Tab
+      window.open(uri, '_blank');
+    }
+  </script>
 </body>
 
 </html>
