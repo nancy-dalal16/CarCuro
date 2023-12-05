@@ -1,10 +1,41 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <html lang="en">
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarCuro</title>
+  <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico"> -->
+
+  <!-- HTML Meta Tags -->
+  <meta name="description"
+    content="Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs. Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay. Schedule a happy and friendly booking now!">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://nancy-dalal16.github.io/carcuro/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CarCuro">
+  <meta property="og:description"
+    content="Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs. Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay. Schedule a happy and friendly booking now!">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/nancy-dalal16/CarCuro/main/assets/img/carcuro_black_logo.jpg">
+  <meta property="og:image:secure_url"
+    content="https://raw.githubusercontent.com/nancy-dalal16/CarCuro/main/assets/img/carcuro_black_logo.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:alt" content="website image" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="nancy-dalal16.github.io">
+  <meta property="twitter:url" content="https://nancy-dalal16.github.io/carcuro/">
+  <meta name="twitter:title" content="CarCuro">
+  <meta name="twitter:description"
+    content="Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs. Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay. Schedule a happy and friendly booking now!">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/nancy-dalal16/CarCuro/main/assets/img/carcuro_black_logo.jpg">
+
+  <!-- Meta Tags-->
 
 
   <!-- CSS References -->
@@ -12,6 +43,7 @@
   <link rel="stylesheet " href="assets/plugins/scroll_animation/scroll-animation.css" />
   <link rel="stylesheet " href="assets/css/common.css " />
   <link rel="stylesheet " href="assets/css/home.css " />
+  <link rel="stylesheet " href="assets/css/service.css " />
   <link rel="stylesheet " href="assets/css/header.css " />
   <link rel="stylesheet " href="assets/css/footer.css " />
 
@@ -37,23 +69,209 @@
   <!-- Banner Section Starts -->
   <section id="hero">
     <!--Header Starts-->
-    <div include="header.html"></div>
+    <!-- <div include="header.html"></div> -->
+    <header class="header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <a href="index.html" id="logo">
+            <img src="assets/img/CarCuro Logo Light.png" alt="CarCuro Logo" />
+          </a>
+        </div>
+        <div>
+          <div class="navigationHolder">
+            <ul class="navigation list-unstyled">
+              <li>
+                <a href="index.html" class="active">Home</a>
+              </li>
+              <!-- <li>
+                <a href="index.html/#about">About CarCuro</a>
+              </li>
+              <li>
+                <a href="#soon">Products</a>
+              </li>
+              <li>
+                <a href="index.html/#service">Services</a>
+              </li>-->
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a class="btn-inverse" href="#cont-form">Book Now</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-navbar-btn">
+            <i class='bx bx-menu bx-md mobile-nav-icon' name="menu-outline"></i>
+            <i class='bx bx-menu-alt-right bx-md mobile-nav-icon' name="close-outline"></i>
+          </div>
+        </div>
+      </div>
+    </header>
     <!--Header Ends-->
 
-
     <div
-      class="container banner-content banner-content-home d-flex justify-content-center align-items-center flex-column">
+      class="container banner-content banner-content-service d-flex justify-content-center align-items-center flex-column col-md-6">
 
-      <h1 class="heading">
-        <span><i>SERVICES</i></span>
+      <h1 class="heading text-center">
+        <span><i>Services</i></span>
       </h1>
-      <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
-        Don’t wait or waste your time, contact CarCuro now to find out what your car.</p>
+      <p class="mt-3 text-center">Our company is Licensed, Bonded and Insured and can get you real funds in as little as
+        2hrs. Don’t wait or waste your time, contact CarCuro now to find out what your car.</p>
 
     </div>
 
   </section>
   <!-- Banner Section Ends -->
+
+  <!--Alt Cards Info Section Starts -->
+
+  <section id="alt-cards" class="page-section">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center m-0">
+        <div class="col-md-6 p-0">
+          <img src="assets/img/Service/Service 1.png" alt="about img" width="100%" />
+        </div>
+        <div class="col-md-6 p-5">
+          <h4>Customer Care</h4>
+          <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
+            Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay.
+            Schedule a happy and friendly booking now!</p>
+          <div class="bannerBtn-holder mt-4">
+            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#querycard">Get
+              Service</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between align-items-center m-0 reverse-row">
+        <div class="col-md-6 p-5">
+          <h4>UV Protection</h4>
+          <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
+            Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay.
+            Schedule a happy and friendly booking now!</p>
+          <div class="bannerBtn-holder mt-4">
+            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#querycard">Get
+              Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 p-0">
+          <img src="assets/img/Service/Service 2.png" alt="about img" width="100%" />
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between align-items-center m-0">
+        <div class="col-md-6 p-0">
+          <img src="assets/img/Service/Service 3.png" alt="about img" width="100%" />
+        </div>
+        <div class="col-md-6 p-5">
+          <h4>Car Wash</h4>
+          <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
+            Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay.
+            Schedule a happy and friendly booking now!</p>
+          <div class="bannerBtn-holder mt-4">
+            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#querycard">Get
+              Service</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between align-items-center m-0 reverse-row">
+        <div class="col-md-6 p-5">
+          <h4>Our Outlets</h4>
+          <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
+            Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay.
+            Schedule a happy and friendly booking now!</p>
+          <div class="bannerBtn-holder mt-4">
+            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#querycard">Get
+              Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 p-0">
+          <img src="assets/img/Service/Service 4.png" alt="about img" width="100%" />
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between align-items-center m-0">
+        <div class="col-md-6 p-0">
+          <img src="assets/img/Service/Service 5.png" alt="about img" width="100%" />
+        </div>
+        <div class="col-md-6 p-5">
+          <h4>Print Protection</h4>
+          <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
+            Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay.
+            Schedule a happy and friendly booking now!</p>
+          <div class="bannerBtn-holder mt-4">
+            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#querycard">Get
+              Service</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between align-items-center m-0 reverse-row">
+        <div class="col-md-6 p-5">
+          <h4>Ceramic Coating</h4>
+          <p class="mt-3">Our company is Licensed, Bonded and Insured and can get you real funds in as little as 2hrs.
+            Don’t wait or waste your time, contact CarCuro now to find out what your car is worth and what we will pay.
+            Schedule a happy and friendly booking now!</p>
+          <div class="bannerBtn-holder mt-4">
+            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#querycard">Get
+              Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 p-0">
+          <img src="assets/img/Service/Service 6.png" alt="about img" width="100%" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="querycard" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+          <img src="assets/img/Service/fi_x-circle.png" alt="close icon" data-bs-dismiss="modal"
+            style="float: right; cursor: pointer;" />
+          <div class="form_section">
+            <div class="container">
+              <h4 class="text-center">Reach Out To Us</h4>
+
+              <form action="">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <select class="form-select">
+                    <option disabled selected>Service</option>
+                    <option value="Customer Care">Customer Care</option>
+                    <option value="UV Protection">UV Protection</option>
+                    <option value="Car Wash">Car Wash</option>
+                    <option value="Print Protection">Print Protection</option>
+                    <option value="Ceramic Coating">Ceramic Coating</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                  <button type="submit" class="btn-primary send-button" style="width: 90%;">Send Request</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Alt Cards Info Section Ends -->
 
 
   <!--Footer Starts-->

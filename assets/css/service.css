@@ -1,0 +1,34 @@
+.banner-content-service {
+  position: relative;
+  top: 30%;
+}
+
+#hero {
+  background: url('../img/Service/Group\ 49.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+
+
+
+/* Media Query Starts */
+
+@media (max-width:998px){
+
+  .banner-content-service{
+    top:25%;
+  }
+
+  .reverse-row{
+    flex-direction: column-reverse;
+  }
+ 
+}
+
+@media (max-width:680px){
+ 
+}
+/* Media Query Ends */
