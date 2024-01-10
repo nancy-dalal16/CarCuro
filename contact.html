@@ -5,9 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarCuro Service Private Limited</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <title>CarCuro</title>
 
+  <!--Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+
+  <link rel="mask-icon" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/img/favicon/Carcuro-Fevicon.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon/Carcuro-Fevicon.png">
   <!-- HTML Meta Tags -->
   <meta name="description" content="CarCuro is a premier automotive detailing studio, dedicated to elevating the aesthetic and
     maintaining the integrity of vehicles. With a focus on precision and passion, we specialize in unveiling the
@@ -249,24 +261,24 @@
         <div class="container">
           <h4 class="text-center">Reach Out To Us</h4>
 
-          <form name="contact" method="post">
+          <form name="contact" method="post" action="contact-handler.php">
             <div class="form-group">
               <div class="row gy-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
                 </div>
 
 
               </div>
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" id="number" placeholder="Phone">
+              <input type="tel" class="form-control" id="number" placeholder="Phone" name="phone" required>
             </div>
             <div class="form-group">
-              <select class="form-select">
+              <select class="form-select" name="service" required>
                 <option disabled selected>Service</option>
                 <option value="Deep Cleaning">Deep Cleaning</option>
                 <option value="Polymer Coating">Polymer Coating</option>
@@ -318,40 +330,7 @@
   <script src="assets/js/common.js"></script>
   <script src="assets/js/header.js"></script>
 
-  <script>
-    var form = document.forms["contact"];
-    form.addEventListener('submit', contact_submit, false);
 
-    function contact_submit(e) {
-      // Stop Form From Submitting
-      e.preventDefault();
-
-      // Set Initial Variables
-      var target = e.target || e.srcElement;
-      var to = 'nancydalal16@gmail.com';
-      var uri = 'mailto:' + to;
-      var body = '';
-
-      // Set Form Values to Variables
-      var name = target.elements['name'].value;
-      var email = target.elements['email'].value;
-      var comment = target.elements['comment'].value;
-      var subject = 'Contact Inquiry';
-
-      // Build Body / Message with all Input Fields
-      body += message + "\r\n\r\n";
-      body += "Name: " + name + "\r\n";
-      body += "Email: " + email + "\r\n";
-      body += "Comment: " + comment + "\r\n";
-
-      // Build final Mailto URI
-      uri += '?subject=' + encodeURIComponent(subject);
-      uri += '&body=' + encodeURIComponent(body);
-
-      // Open Mailto in New Window / Tab
-      window.open(uri, '_blank');
-    }
-  </script>
 </body>
 
 </html>

@@ -5,7 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarCuro Service Private Limited</title>
+  <title>CarCuro</title>
+
+  <!--Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/Carcuro-Fevicon.png">
+
+  <link rel="mask-icon" href="assets/img/favicon/Carcuro-Fevicon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/img/favicon/Carcuro-Fevicon.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/Carcuro-Fevicon.png">
 
   <!-- HTML Meta Tags -->
@@ -14,29 +27,29 @@
     innate beauty of each vehicle, setting a new standard for automotive excellence.">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://nancy-dalal16.github.io/carcuro/">
+  <meta property="og:url" content="https://carcuro.in/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="CarCuro">
   <meta property="og:description" content="CarCuro is a premier automotive detailing studio, dedicated to elevating the aesthetic and
     maintaining the integrity of vehicles. With a focus on precision and passion, we specialize in unveiling the
     innate beauty of each vehicle, setting a new standard for automotive excellence.">
   <meta property="og:image"
-    content="https://raw.githubusercontent.com/nancy-dalal16/CarCuro/main/assets/img/carcuro_black_logo.jpg">
+    content="https://srv1276-files.hstgr.io/b69292b50742af70/files/public_html/assets/img/carcuro_black_logo.jpg">
   <meta property="og:image:secure_url"
-    content="https://raw.githubusercontent.com/nancy-dalal16/CarCuro/main/assets/img/carcuro_black_logo.jpg" />
+    content="https://srv1276-files.hstgr.io/b69292b50742af70/files/public_html/assets/img/carcuro_black_logo.jpg" />
   <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:alt" content="website image" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="nancy-dalal16.github.io">
-  <meta property="twitter:url" content="https://nancy-dalal16.github.io/carcuro/">
+  <meta property="twitter:domain" content="https://carcuro.in/">
+  <meta property="twitter:url" content="https://carcuro.in/">
   <meta name="twitter:title" content="CarCuro">
   <meta name="twitter:description" content="CarCuro is a premier automotive detailing studio, dedicated to elevating the aesthetic and
     maintaining the integrity of vehicles. With a focus on precision and passion, we specialize in unveiling the
     innate beauty of each vehicle, setting a new standard for automotive excellence.">
   <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/nancy-dalal16/CarCuro/main/assets/img/carcuro_black_logo.jpg">
+    content="https://srv1276-files.hstgr.io/b69292b50742af70/files/public_html/assets/img/carcuro_black_logo.jpg">
 
   <!-- Meta Tags-->
 
@@ -251,18 +264,18 @@
             <div class="container">
               <h4 class="text-center">Reach Out To Us</h4>
 
-              <form action="">
+              <form name="contact" method="post" action="contact-handler.php">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="form-group">
-                  <input type="tel" class="form-control" id="number" placeholder="Phone">
+                  <input type="tel" class="form-control" id="number" placeholder="Phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                  <select class="form-select">
+                  <select class="form-select" name="service" required>
                     <option disabled selected>Service</option>
                     <option value="Deep Cleaning">Deep Cleaning</option>
                     <option value="Polymer Coating">Polymer Coating</option>
@@ -273,10 +286,10 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Comment" name="comment"></textarea>
                 </div>
                 <div class="d-flex justify-content-center mt-4">
-                  <button type="submit" class="btn-primary send-button">Send Request</button>
+                  <button type="submit" name="submit" class="btn-primary send-button">Send Request</button>
                 </div>
               </form>
             </div>
